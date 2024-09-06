@@ -9,14 +9,17 @@
 
     <script>
       
-        //  remove duplicate from an array
         var arr = ["apple", "bannana", "orange", "apple", "orange"];
 
+        //  remove duplicate from an array
         arr = arr.filter((item, index, array) => {
             return array.indexOf(item) == index;
         })
-
         console.log(arr);
+
+        // Another method
+        const removeDuplicates = arr => [...new Set(arr)];
+        console.log(removeDuplicates(arr));   
       
     </script>
 </body>
