@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+      
+        //  remove duplicate from an array
+        var arr = ["apple", "bannana", "orange", "apple", "orange"];
+
+        arr = arr.filter((item, index, array) => {
+            return array.indexOf(item) == index;
+        })
+
+        console.log(arr);
+      
+    </script>
+</body>
+</html>
